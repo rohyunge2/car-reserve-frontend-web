@@ -1,0 +1,24 @@
+.{css-prefix}dayname
+    position: absolute
+    margin-left: -1px
+    height: 100%
+    overflow: hidden
+
+    &.{css-prefix}today
+        font-weight: bold
+        color: #1a73e8
+
++prefix-classes(dayname)
+    .container
+        overflow-y: scroll
+
+    .leftmargin
+        position: relative
+        height: 100%
+    
+    .date
+        font-size: 26px
+    
+    .name
+        font-weight: bold
+        font-size: 12px

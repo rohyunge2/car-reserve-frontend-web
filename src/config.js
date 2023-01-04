@@ -1,0 +1,1 @@
+export const API_URL = "https://carbackend.k8s.bns.co.kr";

@@ -1,0 +1,31 @@
+<div class="{{CSS_PREFIX}}weekday-schedules {{collapsed}}"style="top:{{@root.scheduleContainerTop}}px; overflow: hidden;">
+    {{#each matrices ~}}
+    {{#each this ~}} {{! matrix }}
+    {{#each this ~}} {{! column }}
+    {{#if this ~}} {{! viewmodel }}
+    <div data-id="{{stamp model}}"
+        class="{{CSS_PREFIX}}weekday-schedule-block
+            {{#if exceedLeft}} {{CSS_PREFIX}}weekday-exceed-left{{/if}}
+            {{#if exceedRight}} {{CSS_PREFIX}}weekday-exceed-right{{/if}}"
+        style="top:{{multiply top @root.scheduleBlockHeight}}px;
+                left:{{grid-left this @root.dates}}%;
+                width:{{grid-width this @root.dates}}%">
+        <div data-schedule-id="{{model.id}}" data-calendar-id="{{model.calendarId}}" class="{{CSS_PREFIX}}weekday-schedule {{#if model.isFocused}}{{CSS_PREFIX}}weekday-schedule-focused {{/if}}"
+            style="border-radius: {{@root.styles.borderRadius}};height: 248px; line-height:normal; padding: 5px; font-weight: 100; font-size: 14px; color: #FFF;
+                {{#if model.isFocused}}
+                    color: #ffffff; background-color:{{model.color}}; border-color:{{model.color}};
+                {{else}}
+                    color:{{model.color}}; background-color:{{model.bgColor}}; border-color:{{model.borderColor}};
+                {{/if}}
+            {{model.customStyle}}">
+            <span class="{{CSS_PREFIX}}weekday-schedule-title" title="{{model.title}}" style="color: #FFF; font-weight: 100;">
+                {{{userName-tmpl model}}}&nbsp({{{destinationArea-tmpl model}}})&nbsp{{{purpose-tmpl model}}}
+            </span>
+            {{#unless (or @root.isReadOnly model.isReadOnly)}}<span class="{{CSS_PREFIX}}weekday-resize-handle handle-y" style="line-height:248px;">&nbsp;</span>{{/unless}}
+        </div>
+    </div>
+    {{/if ~}}
+    {{/each ~}}
+    {{/each ~}}
+    {{/each ~}}
+</div>

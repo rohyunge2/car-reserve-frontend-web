@@ -1,0 +1,11 @@
+<div class="{{CSS_PREFIX}}dayname-leftmargin" style="margin-left: {{@root.styles.marginLeft}};">
+{{#each dayNames}}
+<div class="{{CSS_PREFIX}}dayname {{#if isToday}}{{CSS_PREFIX}}today{{/if}} {{holiday day}}"
+     data-date="{{renderDate}}"
+     style="{{common-width width}};left:{{left}}%; line-height: {{@root.styles.height}}; padding-left: {{@root.styles.paddingLeft}}; text-align:center; {{#if @first}}border-left: 1px solid rgb(229, 229, 229);{{/if}} {{#unless @last}}border-right: 1px solid rgb(229, 229, 229);{{/unless}}" >
+    <span class="{{CSS_PREFIX}}dayname-date-area" style="color: {{color}};">
+        {{{weekDayname-tmpl this}}}
+    </span>
+</div>
+{{/each}}
+</div>

@@ -1,0 +1,335 @@
+.header{
+    height: 64px;
+    line-height: 64px;
+    border-bottom: 1px solid #dadce0;
+    margin-bottom: 20px;
+}
+
+.header-name{
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.sidebar{
+    width: 250px;
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.mainComponent{
+    width: calc(100% - 270px);
+    float: left;
+}
+
+.weekNavigator{
+    height: 64px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.weekNavigator-month{
+    font-size: 28px;
+    color: #3c4043;
+    font-weight: 600;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+
+.btn-today {
+    height: 36px;
+    float: right;
+
+    /* width: 46px;
+    line-height: 36px;
+    border: 3px solid #CCC;
+    border-radius: 50px;
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    font-family: 'NanumSquare';
+    font-weight: 700; */
+}
+
+.btn-nextWeek {
+    height: 36px;
+    float: right;
+
+    /* width: 36px;
+    line-height: 36px;
+    border: 3px solid #CCC;
+    border-radius: 50px;
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    font-family: 'NanumSquare';
+    font-weight: 700; */
+}
+
+.btn-prevWeek {
+    height: 36px;
+    float: right;
+
+    /* width: 36px;
+    line-height: 36px;
+    border: 3px solid #CCC;
+    border-radius: 50px;
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    font-family: 'NanumSquare';
+    font-weight: 700; */
+}
+
+.btn-reserv{
+    height: 36px;
+    float: right;
+    margin: 15px 15px 0 0;
+}
+
+.weekNavigatorText {
+    margin-left: 138px;
+}
+
+.rectangle{
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+}
+
+.color-MD{
+    background-color: #42a5f5;
+}
+
+.color-MAD{
+    background-color: #ab47bc;
+}
+
+.color-ITD{
+    background-color: #ff7043;
+}
+
+.color-SSD{
+    background-color: #26a69a;
+}
+
+.color-RD{
+    background-color: #5c6bc0;
+}
+
+.color-IDAM{
+    background-color: #ec407a;
+}
+
+.no-border{
+    border: none !important;
+}
+
+.mt200{
+    margin-top:200px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.dim{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    top: 0px;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.save-popup{
+    position: fixed;
+    width: 620px;
+    height: 470px;
+    background-color: #FFF;
+    z-index: 3;
+    padding: 20px;
+}
+
+.detail-popup{
+    position: fixed;
+    width: 620px;
+    height: 490px;
+    background-color: #FFF;
+    z-index: 4;
+    padding: 20px;
+}
+
+.excel-popup{
+    position: fixed;
+    width: 500px;
+    height: 210px;
+    background-color: #FFF;
+    z-index: 5;
+    padding: 20px;
+}
+
+.none{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+.flex-vertical-center{
+    display: flex;
+    align-items: center;
+}
+
+.select-purpose{
+    width: 202px;
+    color: #555;
+}
+
+.color-grey{
+    color: #888;
+}
+
+.input{
+    border: 1px solid #AAA;
+}
+
+.input-bg-grey{
+    background-color: #EEE;
+}
+
+.btn-calculation{
+    border: none;
+    color: #444;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.btn-save{
+    float: right;
+    border-radius: 50px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 30px;
+    margin: 20px 20px 0 0;
+    color: #FFF;
+    background-color: #1a73e8;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.ractangle-24{
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+}
+
+.line-height-normal{
+    line-height: normal;
+}
+
+.line-height-24{
+    line-height: 24px;
+}
+
+.currentLocation{
+    display: flex;
+    flex-direction: column;
+    height: 72px;
+    background-color: #dadce0;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    max-width: 230px;
+}
+
+.currentLocation-title{
+    color: #70757a;
+}
+
+.currentLocation-value{
+    color: #3c4043;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.loading{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    top: 0px;
+    z-index: 2021;
+    background-color: #FFF;
+    opacity: 0.6;
+}
+
+.btnDownloadExcel {
+    float: right;
+    border: 1px solid #CCC;
+    border-radius: 50px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px;
+    margin: 11px 20px 0 0 ;
+    color: #888;
+    font-weight: 300;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+.btnReserveCar{
+    float: right;
+    border: 1px solid #1a73e8;
+    background-color: #1a73e8;
+    border-radius: 50px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px;
+    margin: 11px 20px 0 0 ;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.periodBox{
+    width: 100%;
+    height: 40px;
+}
+
+.periodOption{
+    width:69px ;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    float: left;
+    border-left: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+}
+
+.periodOption:last-child{
+    width:69px ;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    float: left;
+    border: 1px solid #DDD;
+}
+
+.selectedPeriodOption{
+    background-color: #1a73e8;
+    color: #FFF;
+}
